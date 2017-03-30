@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>
+    Wage Theft
+    </title>
+
+
+    <style>
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+table tr:nth-child(odd) {
+   background-color:#fff;
+}
+table th {
+    background-color: black;
+    color: white;
+}
+</style>
+</head>
+<body>
+    {% if data %}
+    <table>
+        <tr>
+
+        {% for key, value in data[0] | dictsort %}
+           <th>{{ column_labels[key] }}</th>
+        {% endfor %}
+
+
+        </tr>
+        {% for row in data %}
+
+
+        <tr>
+           {% for key, value in row | dictsort %}
+           <td>{{ value }}</td>
+            {% endfor %}
+
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+</body>
+</html>
