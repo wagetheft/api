@@ -767,8 +767,8 @@ def safe_arg(request_arg):
 
 
 # Add all REST definitions here
-api.add_resource(Case, '/cases/<case_id>')
-api.add_resource(CaseList, '/cases')
+api.add_resource(Case, '/api/v1/cases/<case_id>')
+api.add_resource(CaseList, '/api/v1/cases')
 
 if __name__ == '__main__':
     app.run()
