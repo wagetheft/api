@@ -45,8 +45,8 @@ import csv
 # Using simplejson because json does not allow converting decimals to numbers
 import simplejson
 
-# This code assumes for now that the config file is in the parent folder one level up
-with open('../config.json', 'r') as f:
+# The API assumes that the config file is in the same folder as this script
+with open('api-config.json', 'r') as f:
     config = simplejson.load(f)
     
 # Create the connection string from our config file for connecting to the database

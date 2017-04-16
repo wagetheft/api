@@ -1,0 +1,5 @@
+/api-config.json
+/nginx-wagetheftapi.conf
+/uwsgi.ini
+/uwsgi-wagetheftapi.service
+

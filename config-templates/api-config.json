@@ -1,0 +1,10 @@
+{
+    "database": {
+        "type": "postgresql",
+        "host": "localhost",
+        "name": "wagetheft",
+        "username": "web",
+        "password": ""
+    }
+    
+}
