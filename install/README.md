@@ -54,7 +54,7 @@ sudo chown www-data:www-data /var/www/.sockets
 
 
 #Copy the config-templates into your api folder. Be careful later NOT to commit these using git.
-sudo cp /var/www/api/config-templates/* /var/www/api
+sudo cp /var/www/api/install/config-templates/* /var/www/api
 
 
 #If you are using a folder other than /var/www/api or selected a different location for the .sockets folder,  then you will need to change the settings in uwsgi.ini, wagetheftapi.service, and nginx-wagetheftapi.conf to reflect the correct location of your files and the sockets folder:
