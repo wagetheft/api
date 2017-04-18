@@ -1,8 +1,8 @@
 # API Install Instructions
 
-This short guide will walk you through setting up the API locally. Most people won't need to do this as you can use the API remotely without having it installed locally. However, if you want to contribute to the code in the API, you'll need to get it running locally.
+This short guide will walk you through setting up the API locally. Most people won't need to do this as you can use the API remotely without having it installed locally. However, if you want to contribute to the API's code, you'll need to get it running locally.
 
-First, message one of the admins for a copy of the test postgres database (wagetheft_postgres_database)
+First, message one of the admins for a copy of the test postgres database (wagetheft_postgres_database).
 
 Then, create the database:
 
@@ -38,7 +38,7 @@ Clone the wagetheft API files to /var/www/api:
 
 ```
 cd /var/www/
-sudo git checkout https://github.com/wagetheft/api
+sudo git clone https://github.com/wagetheft/api
 ```
 
 
