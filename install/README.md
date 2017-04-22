@@ -54,7 +54,7 @@ source /var/www/.virtualenvs/wagetheftapi/bin/activate
 
 Install required python modules:
 
-```sudo pip install -r /var/www/api/requirements.txt```
+```sudo pip install -r /var/www/api/install/requirements.txt```
 
 
 Install uswgi
