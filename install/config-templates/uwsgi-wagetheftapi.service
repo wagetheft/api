@@ -1,0 +1,13 @@
+[Unit]
+Description=uWSGI instance to serve the Wage Theft API
+After=network.target
+
+[Service]
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/api
+Environment="PATH=/var/www/.virtualenvs/wagetheftapi/bin"
+ExecStart=/var/www/.virtualenvs/wagetheftapi/bin/uwsgi --ini uwsgi.ini
+
+[Install]
+WantedBy=multi-user.target
